@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1t3OfTSJJy/klo8cb524a9P81DW1bJ7M6Tlc42Oxfl3XnAb0CZq4Fkde1r4GAYyuMq6L8cHc98ERmXD3vLIpQw==",
+  "dgSpecHash": "AudPdMrDwq1BDNR1OqsEo++BkritgBpe3r0+bUJe7TNpiIeV7mnR4U/rMtBnQ+r70cX0HbX3/2trgmPJstM9Vw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lbhbur1\\Downloads\\CryptoWatcherLBS4\\CryptoWatcherLBS4\\CryptoWatcherWPF\\CryptoWatcherWPF.csproj",
+  "projectFilePath": "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherWPF\\CryptoWatcherWPF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lbhbur1\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\lbhbur1\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",

@@ -162,54 +162,8 @@
                 <StackPanel x:Name="Logo_black" HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="78" Grid.Row="1">
                     <Image Source="/Images/logoBlackRemovebg.png"
                                        Width="62" Height="58"/>
-
                 </StackPanel>
-
-
-                <Button x:Name="btnCreateRecord"
-                        Command="{Binding LoginCommand}"
-                        BorderThickness="0"
-                        Content="Eintrag erstellen"
-                        Foreground="AliceBlue"
-                        FontSize="16"
-                        FontFamily="Montserrat"
-                        Cursor="Hand"
-                        Margin="0,468,0,0" Grid.Row="1" Height="47" VerticalAlignment="Top">
-
-                    <Button.Style>
-                        <Style TargetType="Button">
-                            <Setter Property="Background" Value="#F1E0AC"/>
-                            <Style.Triggers>
-                                <Trigger Property="IsMouseOver" Value="True">
-                                    <Setter Property="Background" Value="#FFFFBB"/>
-                                </Trigger>
-                            </Style.Triggers>
-                        </Style>
-                    </Button.Style>
-                    <!--Set Trigger an Color for Hover action over Button-->
-
-
-
-
-                    <Button.Template>
-                        <ControlTemplate TargetType="Button">
-                            <Border Width="150" Height="40"
-                                    CornerRadius="20"
-                                    Background="{TemplateBinding Background}">
-                                <ContentPresenter VerticalAlignment="Center"
-                                                  HorizontalAlignment="Center"/>
-                            </Border>
-                        </ControlTemplate>
-                    </Button.Template>
-
-                </Button>
-                <!--TODO Add Click event-->
-                <!--TODO Add Click event-->
-
-
-
             </Grid>
-
         </Border>
     </Border>
 </Window>

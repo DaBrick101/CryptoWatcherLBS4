@@ -280,18 +280,7 @@
                         <StackPanel Orientation="Horizontal"
                                 HorizontalAlignment="Center"
                                 Margin="0,15,0,0">
-
-                            <!-- TODO: Steht das im Pflichtenheft? -->
-                            <TextBlock Text ="Forgot Password?"                                      
-                                   Foreground="DarkGray"
-                                   FontSize="11"
-                                   FontWeight="Normal"
-                                   FontFamily="Montserrat"
-                                   Opacity="100"/>                         
                         </StackPanel>
-
-                        <!--Create Forgot Password and option to reset-->
-
                     </StackPanel>
                 </Grid>
             </Border>

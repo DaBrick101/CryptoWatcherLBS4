@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J8q6zv/NTpdfnjJ5Mx4wTn8VW8jtkxGoTapHSozUJajbmfuK5W2wkMn66FW7ecUIwnimrf4tpTw6j0N1OL5Eew==",
+  "dgSpecHash": "I1M0idAxsVYyyKlUesF0/T2x2S2izDWf47KGT0QBMkRDPlufoUa7CB0zzidZbQMvvHBiRl9zTN0bmEZR/Z41Cw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lbhbur1\\Downloads\\CryptoWatcherLBS4\\CryptoWatcherLBS4\\CryptoWatcherConsole\\CryptoWatcherConsole.csproj",
+  "projectFilePath": "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherConsole\\CryptoWatcherConsole.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lbhbur1\\.nuget\\packages\\autofac\\6.4.0\\autofac.6.4.0.nupkg.sha512",
     "C:\\Users\\lbhbur1\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",

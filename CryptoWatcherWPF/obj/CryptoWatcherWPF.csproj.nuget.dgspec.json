@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lbhbur1\\Downloads\\CryptoWatcherLBS4\\CryptoWatcherLBS4\\CryptoWatcherWPF\\CryptoWatcherWPF.csproj": {}
+    "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherWPF\\CryptoWatcherWPF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lbhbur1\\Downloads\\CryptoWatcherLBS4\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj": {
+    "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lbhbur1\\Downloads\\CryptoWatcherLBS4\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj",
+        "projectUniqueName": "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj",
         "projectName": "CryptoWatcherLib",
-        "projectPath": "C:\\Users\\lbhbur1\\Downloads\\CryptoWatcherLBS4\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj",
+        "projectPath": "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj",
         "packagesPath": "C:\\Users\\lbhbur1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lbhbur1\\Downloads\\CryptoWatcherLBS4\\CryptoWatcherLBS4\\CryptoWatcherLogic\\obj\\",
+        "outputPath": "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -99,14 +99,14 @@
         }
       }
     },
-    "C:\\Users\\lbhbur1\\Downloads\\CryptoWatcherLBS4\\CryptoWatcherLBS4\\CryptoWatcherWPF\\CryptoWatcherWPF.csproj": {
+    "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherWPF\\CryptoWatcherWPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lbhbur1\\Downloads\\CryptoWatcherLBS4\\CryptoWatcherLBS4\\CryptoWatcherWPF\\CryptoWatcherWPF.csproj",
+        "projectUniqueName": "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherWPF\\CryptoWatcherWPF.csproj",
         "projectName": "CryptoWatcherWPF",
-        "projectPath": "C:\\Users\\lbhbur1\\Downloads\\CryptoWatcherLBS4\\CryptoWatcherLBS4\\CryptoWatcherWPF\\CryptoWatcherWPF.csproj",
+        "projectPath": "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherWPF\\CryptoWatcherWPF.csproj",
         "packagesPath": "C:\\Users\\lbhbur1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lbhbur1\\Downloads\\CryptoWatcherLBS4\\CryptoWatcherLBS4\\CryptoWatcherWPF\\obj\\",
+        "outputPath": "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherWPF\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -129,8 +129,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\lbhbur1\\Downloads\\CryptoWatcherLBS4\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj": {
-                "projectPath": "C:\\Users\\lbhbur1\\Downloads\\CryptoWatcherLBS4\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj"
+              "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj": {
+                "projectPath": "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj"
               }
             }
           }
