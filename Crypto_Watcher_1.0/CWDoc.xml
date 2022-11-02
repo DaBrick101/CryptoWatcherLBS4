@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CryptoWatcherUI_Old</name>
+    </assembly>
+    <members>
+        <member name="T:Crypto_Watcher_1._0.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:Crypto_Watcher_1._0.CustomControls.BindablePasswordBox">
+            <summary>
+            Interaktionslogik für BindablePasswordBox.xaml
+            </summary>
+            <summary>
+            BindablePasswordBox
+            </summary>
+        </member>
+        <member name="P:Crypto_Watcher_1._0.CustomControls.BindablePasswordBox.Password">
+            <summary>
+            Setzt das Passwort fest und gibt den Wert des Passworts zurück
+            </summary>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.CustomControls.BindablePasswordBox.#ctor">
+            <summary>
+            Initzaliesiert die Passwortbox Komponente
+            </summary>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.CustomControls.BindablePasswordBox.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Crypto_Watcher_1._0.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Crypto_Watcher_1._0.Repositories.RepositoryBase">
+            <summary>
+            Baut den Connection string auf und gibt ihn zurück
+            </summary>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.Repositories.RepositoryBase.#ctor">
+            <summary>
+            Baut aus den gegebenen Parametern einen Connection string zusammen
+            </summary>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.Repositories.RepositoryBase.GetDbConnectionString">
+            <summary>
+            Gibt den Connectons String zurück
+            </summary>
+            <returns>_connection</returns>
+        </member>
+        <member name="T:Crypto_Watcher_1._0.Repositories.UserRepository">
+            <summary>
+            Alle funktionen die den User betreffen beim Login.
+            </summary>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.Repositories.UserRepository.AuthenticateUser(System.Net.NetworkCredential)">
+            <summary>
+            Der User wird beim Login überprüft, ob die angegebenen Daten in der Datenbank vorhanden sind
+            Ist der User vorhanden wird der Wert von validUser auf True gesetzt.
+            Ansonsten wird validUser auf false gesetzt und eine Error Message(invalid Userame or Password) ausgegeben.
+            </summary>
+            <param name="credential"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.Repositories.UserRepository.Add(CryptoWatcherLib.Models.UserModel)">
+            <summary>
+            Registrations Methode
+            </summary>
+            <param name="userModel"></param>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.Repositories.UserRepository.Edit(CryptoWatcherLib.Models.UserModel)">
+            <summary>
+            Edit Username oder Password Methode
+            </summary>
+            <param name="userModel"></param>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.Repositories.UserRepository.Remove(CryptoWatcherLib.Models.UserModel)">
+            <summary>
+            User löschen
+            </summary>
+            <param name="userModel"></param>
+        </member>
+        <member name="T:Crypto_Watcher_1._0.Themes.Generic">
+            <summary>
+            Interaktionslogik für Generic.xaml
+            </summary>
+            <summary>
+            Generic
+            </summary>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.Themes.Generic.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Crypto_Watcher_1._0.Viewmodel.Dashboard_MainViewModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Crypto_Watcher_1._0.Viewmodel.LoginViewModel">
+            <summary>
+            Führt Commands aus, holt und setzt die Werte der Fields:
+            _username
+            _password
+            _errorMessage
+            _isViewVisible
+            </summary>
+        </member>
+        <member name="P:Crypto_Watcher_1._0.Viewmodel.LoginViewModel.Username">
+            <summary>
+            Get und Set Username beim Login
+            </summary>
+        </member>
+        <member name="P:Crypto_Watcher_1._0.Viewmodel.LoginViewModel.Password">
+            <summary>
+            Get und Set Passwort beim Login
+            </summary>
+        </member>
+        <member name="P:Crypto_Watcher_1._0.Viewmodel.LoginViewModel.ErrorMessage">
+            <summary>
+            Get und Set ErrorMessage, falls Eingabe ungültig ist oder Falsch
+            </summary>
+        </member>
+        <member name="P:Crypto_Watcher_1._0.Viewmodel.LoginViewModel.IsViewVisible">
+            <summary>
+            Get und Set ob die LoginView Visible ist oder nicht.
+            </summary>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.Viewmodel.LoginViewModel.#ctor">
+            <summary>
+            Konstruktor des LogInViewModel
+            </summary>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.Viewmodel.LoginViewModel.CanExecuteLoginCommand(System.Object)">
+            <summary>
+            Überprüft ob die Eingabe von Username und Passwort erlaubt sind.
+            </summary>
+            <param name="obj"></param>
+            <returns>Ein Bool mit Information ob die Daten zugelassen werden oder nicht</returns>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.Viewmodel.LoginViewModel.ExecuteLoginCommand(System.Object)">
+            <summary>
+            Führt den Login aus wenn, der User durch die Methode "AuthenticateUser" als Valid bestätigt wird.
+            Sollte der User nicht Valid sein wird die ErrorMessag auf "Invalid username or password" gesetzt.
+            Sollte der User Valid sein wird er Angemeldet und die LoginView ist nicht mehr Visible.
+            </summary>
+            <param name="obj"></param>
+        </member>
+        <member name="T:Crypto_Watcher_1._0.Viewmodel.ViewModelBase">
+            <summary>
+            Im ViewModelBase wird überprüft ob sich etwas auf der View geändert hat.
+            Wird etwas geändert, wird die Property Invoked 
+            </summary>
+        </member>
+        <member name="T:Crypto_Watcher_1._0.Viewmodel.ViewModelCommand">
+            <summary>
+            Im ViewModelCommand werden die Commands überprüft ob sie ausgeführt werden können und werden dann ausgeführt
+            </summary>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.Viewmodel.ViewModelCommand.CanExecute(System.Object)">
+            <summary>
+            Hier wird entschieden ob ein Command ausgeführt werden kann 
+            </summary>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Crypto_Watcher_1._0.View.Dashboard_Main">
+            <summary>
+            Interaktionslogik für Dashboard_Main.xaml
+            </summary>
+            <summary>
+            Dashboard_Main
+            </summary>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.View.Dashboard_Main.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Crypto_Watcher_1._0.View.Dashboard_new">
+            <summary>
+            Interaktionslogik für Dashboard_new.xaml
+            </summary>
+            <summary>
+            Dashboard_new
+            </summary>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.View.Dashboard_new.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Crypto_Watcher_1._0.View.LogInView">
+            <summary>
+            Interaktionslogik für LogInView.xaml
+            </summary>
+            <summary>
+            LogInView
+            </summary>
+        </member>
+        <member name="M:Crypto_Watcher_1._0.View.LogInView.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CryptoWatcherLib.Models.IUser">
+            <summary>
+            Interface für die Prepared Statements 
+            </summary>
+        </member>
+        <member name="T:CryptoWatcherLib.Models.UserModel">
+            <summary>
+            Model des Users beinhaltet die Propertys des Users
+            </summary>
+        </member>
+    </members>
+</doc>

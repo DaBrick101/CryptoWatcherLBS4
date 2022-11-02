@@ -1,0 +1,42 @@
+\doxysection{Repository\+Base.\+cs}
+\label{_repository_base_8cs_source}\index{C:/Users/Ricardo.Buchebner/source/repos/Crypto\_Watcher\_1.0/Crypto\_Watcher\_1.0/Repositories/RepositoryBase.cs@{C:/Users/Ricardo.Buchebner/source/repos/Crypto\_Watcher\_1.0/Crypto\_Watcher\_1.0/Repositories/RepositoryBase.cs}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{00003 \textcolor{keyword}{using }System.Data.Common;}
+\DoxyCodeLine{00004 \textcolor{keyword}{using }System.Linq;}
+\DoxyCodeLine{00005 \textcolor{keyword}{using }System.Text;}
+\DoxyCodeLine{00006 \textcolor{keyword}{using }System.Threading.Tasks;}
+\DoxyCodeLine{00007 \textcolor{keyword}{using }System.Data.SqlClient;}
+\DoxyCodeLine{00008 \textcolor{keyword}{using }MySqlConnector;}
+\DoxyCodeLine{00009 }
+\DoxyCodeLine{00010 }
+\DoxyCodeLine{00011 \textcolor{keyword}{namespace }Crypto\_Watcher\_1.\_0.Repositories}
+\DoxyCodeLine{00012 \{}
+\DoxyCodeLine{00016     \textcolor{keyword}{public} \textcolor{keyword}{abstract} \textcolor{keyword}{class }RepositoryBase}
+\DoxyCodeLine{00017     \{}
+\DoxyCodeLine{00018         \textcolor{keyword}{private} readonly \textcolor{keywordtype}{string} \_connectionString;}
+\DoxyCodeLine{00019         \textcolor{keyword}{private} readonly MySqlConnection \_connection;}
+\DoxyCodeLine{00020 }
+\DoxyCodeLine{00024         \textcolor{keyword}{public} RepositoryBase()}
+\DoxyCodeLine{00025         \{}
+\DoxyCodeLine{00026             var builder = \textcolor{keyword}{new} MySqlConnectionStringBuilder}
+\DoxyCodeLine{00027             \{}
+\DoxyCodeLine{00028                 Server = \textcolor{stringliteral}{"{}crypto-\/watcher-\/db.mysql.database.azure.com"{}},}
+\DoxyCodeLine{00029                 Database = \textcolor{stringliteral}{"{}crypto\_watcher\_db"{}},}
+\DoxyCodeLine{00030                 UserID = \textcolor{stringliteral}{"{}cryBur0\_a@crypto-\/watcher-\/db"{}},}
+\DoxyCodeLine{00031                 Password = \textcolor{stringliteral}{"{}Gschacht\#!"{}}}
+\DoxyCodeLine{00032             \};}
+\DoxyCodeLine{00033 }
+\DoxyCodeLine{00034             \_connection = \textcolor{keyword}{new} MySqlConnection(builder.ConnectionString);}
+\DoxyCodeLine{00035         \}}
+\DoxyCodeLine{00040         \textcolor{keyword}{public} MySqlConnection GetDbConnectionString()}
+\DoxyCodeLine{00041         \{}
+\DoxyCodeLine{00042             \textcolor{keywordflow}{return} \_connection;}
+\DoxyCodeLine{00043         \}}
+\DoxyCodeLine{00044 }
+\DoxyCodeLine{00045     \}}
+\DoxyCodeLine{00046 \}}
+
+\end{DoxyCode}

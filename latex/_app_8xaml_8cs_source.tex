@@ -1,0 +1,35 @@
+\doxysection{App.\+xaml.\+cs}
+\label{_app_8xaml_8cs_source}\index{C:/Users/Ricardo.Buchebner/source/repos/Crypto\_Watcher\_1.0/Crypto\_Watcher\_1.0/App.xaml.cs@{C:/Users/Ricardo.Buchebner/source/repos/Crypto\_Watcher\_1.0/Crypto\_Watcher\_1.0/App.xaml.cs}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{00003 \textcolor{keyword}{using }System.Configuration;}
+\DoxyCodeLine{00004 \textcolor{keyword}{using }System.Data;}
+\DoxyCodeLine{00005 \textcolor{keyword}{using }System.Linq;}
+\DoxyCodeLine{00006 \textcolor{keyword}{using }System.Threading.Tasks;}
+\DoxyCodeLine{00007 \textcolor{keyword}{using }System.Windows;}
+\DoxyCodeLine{00008 \textcolor{keyword}{using }Crypto\_Watcher\_1.\_0.View;}
+\DoxyCodeLine{00009 }
+\DoxyCodeLine{00010 \textcolor{keyword}{namespace }Crypto\_Watcher\_1.\_0}
+\DoxyCodeLine{00011 \{}
+\DoxyCodeLine{00015     \textcolor{keyword}{public} \textcolor{keyword}{partial class }App : Application}
+\DoxyCodeLine{00016     \{}
+\DoxyCodeLine{00017         \textcolor{keyword}{protected} \textcolor{keywordtype}{void} ApplicationStart(\textcolor{keywordtype}{object} sender, StartupEventArgs e)}
+\DoxyCodeLine{00018         \{}
+\DoxyCodeLine{00019             var loginView = \textcolor{keyword}{new} LogInView();}
+\DoxyCodeLine{00020             loginView.Show();}
+\DoxyCodeLine{00021             loginView.IsVisibleChanged += (s,ev) =>}
+\DoxyCodeLine{00022             \{}
+\DoxyCodeLine{00023                 \textcolor{keywordflow}{if} (loginView.IsVisible == \textcolor{keyword}{false} \&\& loginView.IsLoaded)}
+\DoxyCodeLine{00024                 \{}
+\DoxyCodeLine{00025                     var mainWindow = \textcolor{keyword}{new} Dashboard\_Main();}
+\DoxyCodeLine{00026                     mainWindow.Show();}
+\DoxyCodeLine{00027                     loginView.Close();}
+\DoxyCodeLine{00028                 \}}
+\DoxyCodeLine{00029             \};}
+\DoxyCodeLine{00030         \}}
+\DoxyCodeLine{00031     \}}
+\DoxyCodeLine{00032 \}}
+
+\end{DoxyCode}

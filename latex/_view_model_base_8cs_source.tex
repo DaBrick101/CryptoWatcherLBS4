@@ -1,0 +1,25 @@
+\doxysection{View\+Model\+Base.\+cs}
+\label{_view_model_base_8cs_source}\index{C:/Users/Ricardo.Buchebner/source/repos/Crypto\_Watcher\_1.0/Crypto\_Watcher\_1.0/Viewmodel/ViewModelBase.cs@{C:/Users/Ricardo.Buchebner/source/repos/Crypto\_Watcher\_1.0/Crypto\_Watcher\_1.0/Viewmodel/ViewModelBase.cs}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{00003 \textcolor{keyword}{using }System.ComponentModel;}
+\DoxyCodeLine{00004 \textcolor{keyword}{using }System.Linq;}
+\DoxyCodeLine{00005 \textcolor{keyword}{using }System.Text;}
+\DoxyCodeLine{00006 \textcolor{keyword}{using }System.Threading.Tasks;}
+\DoxyCodeLine{00007 }
+\DoxyCodeLine{00008 \textcolor{keyword}{namespace }Crypto\_Watcher\_1.\_0.Viewmodel}
+\DoxyCodeLine{00009 \{}
+\DoxyCodeLine{00014     \textcolor{keyword}{public} \textcolor{keyword}{abstract} \textcolor{keyword}{class }ViewModelBase : INotifyPropertyChanged}
+\DoxyCodeLine{00015     \{}
+\DoxyCodeLine{00016         \textcolor{keyword}{public} \textcolor{keyword}{event} PropertyChangedEventHandler? PropertyChanged;}
+\DoxyCodeLine{00017 }
+\DoxyCodeLine{00018         \textcolor{keyword}{public} \textcolor{keywordtype}{void} OnPropertyChanged(\textcolor{keywordtype}{string} propertyName)}
+\DoxyCodeLine{00019         \{}
+\DoxyCodeLine{00020             PropertyChanged?.Invoke(\textcolor{keyword}{this}, \textcolor{keyword}{new} PropertyChangedEventArgs(propertyName));}
+\DoxyCodeLine{00021         \}}
+\DoxyCodeLine{00022     \}}
+\DoxyCodeLine{00023 \}}
+
+\end{DoxyCode}

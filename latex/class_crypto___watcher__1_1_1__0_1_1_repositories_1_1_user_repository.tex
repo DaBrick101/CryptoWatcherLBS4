@@ -1,0 +1,170 @@
+\doxysection{Crypto\+\_\+\+Watcher\+\_\+1.\+\_\+0.\+Repositories.\+User\+Repository Class Reference}
+\label{class_crypto___watcher__1_1_1__0_1_1_repositories_1_1_user_repository}\index{Crypto\_Watcher\_1.\_0.Repositories.UserRepository@{Crypto\_Watcher\_1.\_0.Repositories.UserRepository}}
+
+
+Alle funktionen die den User betreffen beim Login.   
+
+
+Inheritance diagram for Crypto\+\_\+\+Watcher\+\_\+1.\+\_\+0.\+Repositories.\+User\+Repository\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.812298cm]{class_crypto___watcher__1_1_1__0_1_1_repositories_1_1_user_repository}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \textbf{ Authenticate\+User} (Network\+Credential credential)
+\begin{DoxyCompactList}\small\item\em Der User wird beim Login überprüft, ob die angegebenen Daten in der Datenbank vorhanden sind Ist der User vorhanden wird der Wert von valid\+User auf True gesetzt. Ansonsten wird valid\+User auf false gesetzt und eine Error Message(invalid Userame or Password) ausgegeben.  \end{DoxyCompactList}\item 
+void \textbf{ Add} (\textbf{ User\+Model} user\+Model)
+\begin{DoxyCompactList}\small\item\em Registrations Methode  \end{DoxyCompactList}\item 
+void \textbf{ Edit} (\textbf{ User\+Model} user\+Model)
+\begin{DoxyCompactList}\small\item\em Edit Username oder Password Methode  \end{DoxyCompactList}\item 
+void \textbf{ Remove} (\textbf{ User\+Model} user\+Model)
+\begin{DoxyCompactList}\small\item\em User löschen  \end{DoxyCompactList}\item 
+\textbf{ User\+Model} \textbf{ Get\+By\+Id} (int id)
+\item 
+\textbf{ User\+Model} \textbf{ Get\+By\+Username} (string username)
+\item 
+IEnumerable$<$ \textbf{ User\+Model} $>$ \textbf{ Get\+By\+All} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Alle funktionen die den User betreffen beim Login.  
+
+Definition at line \textbf{ 18} of file \textbf{ User\+Repository.\+cs}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\label{class_crypto___watcher__1_1_1__0_1_1_repositories_1_1_user_repository_a245046f97a4abf1336ee9169436874c6}} 
+\index{Crypto\_Watcher\_1.\_0.Repositories.UserRepository@{Crypto\_Watcher\_1.\_0.Repositories.UserRepository}!Add@{Add}}
+\index{Add@{Add}!Crypto\_Watcher\_1.\_0.Repositories.UserRepository@{Crypto\_Watcher\_1.\_0.Repositories.UserRepository}}
+\doxysubsubsection{Add()}
+{\footnotesize\ttfamily void Crypto\+\_\+\+Watcher\+\_\+1.\+\_\+0.\+Repositories.\+User\+Repository.\+Add (\begin{DoxyParamCaption}\item[{\textbf{ User\+Model}}]{user\+Model }\end{DoxyParamCaption})}
+
+
+
+Registrations Methode  
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Model} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 62} of file \textbf{ User\+Repository.\+cs}.
+
+\mbox{\label{class_crypto___watcher__1_1_1__0_1_1_repositories_1_1_user_repository_a0a07e4cb420484c109e47e892e347e83}} 
+\index{Crypto\_Watcher\_1.\_0.Repositories.UserRepository@{Crypto\_Watcher\_1.\_0.Repositories.UserRepository}!AuthenticateUser@{AuthenticateUser}}
+\index{AuthenticateUser@{AuthenticateUser}!Crypto\_Watcher\_1.\_0.Repositories.UserRepository@{Crypto\_Watcher\_1.\_0.Repositories.UserRepository}}
+\doxysubsubsection{AuthenticateUser()}
+{\footnotesize\ttfamily bool Crypto\+\_\+\+Watcher\+\_\+1.\+\_\+0.\+Repositories.\+User\+Repository.\+Authenticate\+User (\begin{DoxyParamCaption}\item[{Network\+Credential}]{credential }\end{DoxyParamCaption})}
+
+
+
+Der User wird beim Login überprüft, ob die angegebenen Daten in der Datenbank vorhanden sind Ist der User vorhanden wird der Wert von valid\+User auf True gesetzt. Ansonsten wird valid\+User auf false gesetzt und eine Error Message(invalid Userame or Password) ausgegeben.  
+
+
+\begin{DoxyParams}{Parameters}
+{\em credential} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \textbf{ IUser} \doxyref{}{p.}{interface_i_user_a48df868b359f23aa48303e17f8d5426b}.
+
+
+
+Definition at line \textbf{ 27} of file \textbf{ User\+Repository.\+cs}.
+
+\mbox{\label{class_crypto___watcher__1_1_1__0_1_1_repositories_1_1_user_repository_a4d2b8692a8c3afdf2c827dd60fec200c}} 
+\index{Crypto\_Watcher\_1.\_0.Repositories.UserRepository@{Crypto\_Watcher\_1.\_0.Repositories.UserRepository}!Edit@{Edit}}
+\index{Edit@{Edit}!Crypto\_Watcher\_1.\_0.Repositories.UserRepository@{Crypto\_Watcher\_1.\_0.Repositories.UserRepository}}
+\doxysubsubsection{Edit()}
+{\footnotesize\ttfamily void Crypto\+\_\+\+Watcher\+\_\+1.\+\_\+0.\+Repositories.\+User\+Repository.\+Edit (\begin{DoxyParamCaption}\item[{\textbf{ User\+Model}}]{user\+Model }\end{DoxyParamCaption})}
+
+
+
+Edit Username oder Password Methode  
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Model} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 83} of file \textbf{ User\+Repository.\+cs}.
+
+\mbox{\label{class_crypto___watcher__1_1_1__0_1_1_repositories_1_1_user_repository_a3e1d406e7c719ad5e5f6a3835fa51add}} 
+\index{Crypto\_Watcher\_1.\_0.Repositories.UserRepository@{Crypto\_Watcher\_1.\_0.Repositories.UserRepository}!GetByAll@{GetByAll}}
+\index{GetByAll@{GetByAll}!Crypto\_Watcher\_1.\_0.Repositories.UserRepository@{Crypto\_Watcher\_1.\_0.Repositories.UserRepository}}
+\doxysubsubsection{GetByAll()}
+{\footnotesize\ttfamily IEnumerable$<$ \textbf{ User\+Model} $>$ Crypto\+\_\+\+Watcher\+\_\+1.\+\_\+0.\+Repositories.\+User\+Repository.\+Get\+By\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Implements \textbf{ IUser} \doxyref{}{p.}{interface_i_user_a6970438df6b1e96d8ce7178d87de1b44}.
+
+
+
+Definition at line \textbf{ 132} of file \textbf{ User\+Repository.\+cs}.
+
+\mbox{\label{class_crypto___watcher__1_1_1__0_1_1_repositories_1_1_user_repository_abcd49b95f17fa386244563670ddca6f2}} 
+\index{Crypto\_Watcher\_1.\_0.Repositories.UserRepository@{Crypto\_Watcher\_1.\_0.Repositories.UserRepository}!GetById@{GetById}}
+\index{GetById@{GetById}!Crypto\_Watcher\_1.\_0.Repositories.UserRepository@{Crypto\_Watcher\_1.\_0.Repositories.UserRepository}}
+\doxysubsubsection{GetById()}
+{\footnotesize\ttfamily \textbf{ User\+Model} Crypto\+\_\+\+Watcher\+\_\+1.\+\_\+0.\+Repositories.\+User\+Repository.\+Get\+By\+Id (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Implements \textbf{ IUser} \doxyref{}{p.}{interface_i_user_a9722a57ddfae6f933921b00c78f478b7}.
+
+
+
+Definition at line \textbf{ 122} of file \textbf{ User\+Repository.\+cs}.
+
+\mbox{\label{class_crypto___watcher__1_1_1__0_1_1_repositories_1_1_user_repository_a3ba18bd708a21f5a9c8aa7f9ceb738fc}} 
+\index{Crypto\_Watcher\_1.\_0.Repositories.UserRepository@{Crypto\_Watcher\_1.\_0.Repositories.UserRepository}!GetByUsername@{GetByUsername}}
+\index{GetByUsername@{GetByUsername}!Crypto\_Watcher\_1.\_0.Repositories.UserRepository@{Crypto\_Watcher\_1.\_0.Repositories.UserRepository}}
+\doxysubsubsection{GetByUsername()}
+{\footnotesize\ttfamily \textbf{ User\+Model} Crypto\+\_\+\+Watcher\+\_\+1.\+\_\+0.\+Repositories.\+User\+Repository.\+Get\+By\+Username (\begin{DoxyParamCaption}\item[{string}]{username }\end{DoxyParamCaption})}
+
+
+
+Implements \textbf{ IUser} \doxyref{}{p.}{interface_i_user_ab238bd8853a92cec08a81fb50291b76e}.
+
+
+
+Definition at line \textbf{ 127} of file \textbf{ User\+Repository.\+cs}.
+
+\mbox{\label{class_crypto___watcher__1_1_1__0_1_1_repositories_1_1_user_repository_a33c23b755dc5f3910c4377134e1a44b2}} 
+\index{Crypto\_Watcher\_1.\_0.Repositories.UserRepository@{Crypto\_Watcher\_1.\_0.Repositories.UserRepository}!Remove@{Remove}}
+\index{Remove@{Remove}!Crypto\_Watcher\_1.\_0.Repositories.UserRepository@{Crypto\_Watcher\_1.\_0.Repositories.UserRepository}}
+\doxysubsubsection{Remove()}
+{\footnotesize\ttfamily void Crypto\+\_\+\+Watcher\+\_\+1.\+\_\+0.\+Repositories.\+User\+Repository.\+Remove (\begin{DoxyParamCaption}\item[{\textbf{ User\+Model}}]{user\+Model }\end{DoxyParamCaption})}
+
+
+
+User löschen  
+
+
+\begin{DoxyParams}{Parameters}
+{\em user\+Model} & \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \textbf{ 104} of file \textbf{ User\+Repository.\+cs}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Ricardo.\+Buchebner/source/repos/\+Crypto\+\_\+\+Watcher\+\_\+1.\+0/\+Crypto\+\_\+\+Watcher\+\_\+1.\+0/\+Repositories/\textbf{ User\+Repository.\+cs}\end{DoxyCompactItemize}

@@ -1,0 +1,45 @@
+\doxysection{View\+Model\+Command.\+cs}
+\label{_view_model_command_8cs_source}\index{C:/Users/Ricardo.Buchebner/source/repos/Crypto\_Watcher\_1.0/Crypto\_Watcher\_1.0/Viewmodel/ViewModelCommand.cs@{C:/Users/Ricardo.Buchebner/source/repos/Crypto\_Watcher\_1.0/Crypto\_Watcher\_1.0/Viewmodel/ViewModelCommand.cs}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{00003 \textcolor{keyword}{using }System.Linq;}
+\DoxyCodeLine{00004 \textcolor{keyword}{using }System.Text;}
+\DoxyCodeLine{00005 \textcolor{keyword}{using }System.Threading.Tasks;}
+\DoxyCodeLine{00006 \textcolor{keyword}{using }System.Windows.Input;}
+\DoxyCodeLine{00007 }
+\DoxyCodeLine{00008 \textcolor{keyword}{namespace }Crypto\_Watcher\_1.\_0.Viewmodel}
+\DoxyCodeLine{00009 \{}
+\DoxyCodeLine{00013     \textcolor{keyword}{public} \textcolor{keyword}{class }ViewModelCommand : ICommand \textcolor{comment}{//Sends Commands}}
+\DoxyCodeLine{00014     \{}
+\DoxyCodeLine{00015         \textcolor{keyword}{private} readonly Action<object> \_executeAction;}
+\DoxyCodeLine{00016         \textcolor{keyword}{private} readonly Predicate<object> \_canExecuteAction;}
+\DoxyCodeLine{00017 }
+\DoxyCodeLine{00018         \textcolor{keyword}{public} ViewModelCommand(Action<object> executeAction)}
+\DoxyCodeLine{00019         \{}
+\DoxyCodeLine{00020             \_executeAction = executeAction;}
+\DoxyCodeLine{00021         \}}
+\DoxyCodeLine{00022         \textcolor{keyword}{public} ViewModelCommand(Action<object> executeAction, Predicate<object> canExecuteAction)}
+\DoxyCodeLine{00023         \{}
+\DoxyCodeLine{00024             \_executeAction = executeAction;}
+\DoxyCodeLine{00025             \_canExecuteAction = canExecuteAction;}
+\DoxyCodeLine{00026         \}}
+\DoxyCodeLine{00027         \textcolor{keyword}{public} \textcolor{keyword}{event} EventHandler? CanExecuteChanged}
+\DoxyCodeLine{00028         \{}
+\DoxyCodeLine{00029             add => CommandManager.RequerySuggested += value;}
+\DoxyCodeLine{00030             \textcolor{keyword}{remove} => CommandManager.RequerySuggested -\/= value;}
+\DoxyCodeLine{00031         \}}
+\DoxyCodeLine{00037         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} CanExecute(\textcolor{keywordtype}{object}? parameter)}
+\DoxyCodeLine{00038         \{}
+\DoxyCodeLine{00039             \textcolor{keywordflow}{return} \_canExecuteAction(parameter);}
+\DoxyCodeLine{00040         \}}
+\DoxyCodeLine{00041 }
+\DoxyCodeLine{00042         \textcolor{keyword}{public} \textcolor{keywordtype}{void} Execute(\textcolor{keywordtype}{object}? parameter)}
+\DoxyCodeLine{00043         \{}
+\DoxyCodeLine{00044             \_executeAction(parameter);}
+\DoxyCodeLine{00045         \}}
+\DoxyCodeLine{00046     \}}
+\DoxyCodeLine{00047 \}}
+
+\end{DoxyCode}

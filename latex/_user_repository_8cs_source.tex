@@ -1,0 +1,121 @@
+\doxysection{User\+Repository.\+cs}
+\label{_user_repository_8cs_source}\index{C:/Users/Ricardo.Buchebner/source/repos/Crypto\_Watcher\_1.0/Crypto\_Watcher\_1.0/Repositories/UserRepository.cs@{C:/Users/Ricardo.Buchebner/source/repos/Crypto\_Watcher\_1.0/Crypto\_Watcher\_1.0/Repositories/UserRepository.cs}}
+\textbf{ Go to the documentation of this file.}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001 \textcolor{keyword}{using }System;}
+\DoxyCodeLine{00002 \textcolor{keyword}{using }System.Collections.Generic;}
+\DoxyCodeLine{00003 \textcolor{keyword}{using }System.Data;}
+\DoxyCodeLine{00004 \textcolor{keyword}{using }System.Data.SqlClient;}
+\DoxyCodeLine{00005 \textcolor{keyword}{using }System.Linq;}
+\DoxyCodeLine{00006 \textcolor{keyword}{using }System.Net;}
+\DoxyCodeLine{00007 \textcolor{keyword}{using }System.Text;}
+\DoxyCodeLine{00008 \textcolor{keyword}{using }System.Threading.Tasks;}
+\DoxyCodeLine{00009 \textcolor{keyword}{using }System.Windows;}
+\DoxyCodeLine{00010 \textcolor{keyword}{using }Crypto\_Watcher\_1.\_0.Model;}
+\DoxyCodeLine{00011 \textcolor{keyword}{using }MySqlConnector;}
+\DoxyCodeLine{00012 }
+\DoxyCodeLine{00013 \textcolor{keyword}{namespace }Crypto\_Watcher\_1.\_0.Repositories}
+\DoxyCodeLine{00014 \{}
+\DoxyCodeLine{00018     \textcolor{keyword}{public} \textcolor{keyword}{class }UserRepository:RepositoryBase, IUser}
+\DoxyCodeLine{00019     \{}
+\DoxyCodeLine{00027         \textcolor{keyword}{public} \textcolor{keywordtype}{bool} AuthenticateUser(NetworkCredential credential)}
+\DoxyCodeLine{00028         \{}
+\DoxyCodeLine{00029             MySqlConnection conn;}
+\DoxyCodeLine{00030             MySqlCommand cmd;}
+\DoxyCodeLine{00031 }
+\DoxyCodeLine{00032             conn = GetDbConnectionString();}
+\DoxyCodeLine{00033             cmd = \textcolor{keyword}{new} MySqlCommand();}
+\DoxyCodeLine{00034 }
+\DoxyCodeLine{00035             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00036             \{}
+\DoxyCodeLine{00037                 conn.Open();}
+\DoxyCodeLine{00038                 cmd.Connection = conn;}
+\DoxyCodeLine{00039                 cmd.CommandText = \textcolor{stringliteral}{"{}Select * from User where Username=@username and Passwort=@password"{}};}
+\DoxyCodeLine{00040                 cmd.Prepare();}
+\DoxyCodeLine{00041                 cmd.Parameters.Add(\textcolor{stringliteral}{"{}@username"{}}, MySqlDbType.VarChar).Value = credential.UserName;}
+\DoxyCodeLine{00042                 cmd.Parameters.Add(\textcolor{stringliteral}{"{}@password"{}}, MySqlDbType.VarChar).Value = credential.Password;}
+\DoxyCodeLine{00043                 var yarrak = cmd.ExecuteReader();}
+\DoxyCodeLine{00044                 var pimmel = yarrak[3];}
+\DoxyCodeLine{00045                 \textcolor{keywordtype}{bool} validUser = cmd.ExecuteScalar() != \textcolor{keyword}{null};}
+\DoxyCodeLine{00046                 conn.Close();}
+\DoxyCodeLine{00047                 \textcolor{keywordflow}{return} validUser;}
+\DoxyCodeLine{00048 }
+\DoxyCodeLine{00049             \}}
+\DoxyCodeLine{00050             \textcolor{keywordflow}{catch} (MySqlException ex)}
+\DoxyCodeLine{00051             \{}
+\DoxyCodeLine{00052                 var exception = ex as MySqlException;}
+\DoxyCodeLine{00053                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{00054             \}}
+\DoxyCodeLine{00055             }
+\DoxyCodeLine{00056 }
+\DoxyCodeLine{00057         \}}
+\DoxyCodeLine{00062         \textcolor{keyword}{public} \textcolor{keywordtype}{void} Add(UserModel userModel)}
+\DoxyCodeLine{00063         \{}
+\DoxyCodeLine{00064             MySqlConnection conn;}
+\DoxyCodeLine{00065             MySqlCommand cmd;}
+\DoxyCodeLine{00066 }
+\DoxyCodeLine{00067             conn = GetDbConnectionString();}
+\DoxyCodeLine{00068             cmd = \textcolor{keyword}{new} MySqlCommand();}
+\DoxyCodeLine{00069 }
+\DoxyCodeLine{00070             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00071             \{}
+\DoxyCodeLine{00072 }
+\DoxyCodeLine{00073             \}}
+\DoxyCodeLine{00074             \textcolor{keywordflow}{catch}}
+\DoxyCodeLine{00075             \{}
+\DoxyCodeLine{00076 }
+\DoxyCodeLine{00077             \}}
+\DoxyCodeLine{00078         \}}
+\DoxyCodeLine{00083         \textcolor{keyword}{public} \textcolor{keywordtype}{void} Edit(UserModel userModel)}
+\DoxyCodeLine{00084         \{}
+\DoxyCodeLine{00085             MySqlConnection conn;}
+\DoxyCodeLine{00086             MySqlCommand cmd;}
+\DoxyCodeLine{00087 }
+\DoxyCodeLine{00088             conn = GetDbConnectionString();}
+\DoxyCodeLine{00089             cmd = \textcolor{keyword}{new} MySqlCommand();}
+\DoxyCodeLine{00090 }
+\DoxyCodeLine{00091             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00092             \{}
+\DoxyCodeLine{00093 }
+\DoxyCodeLine{00094             \}}
+\DoxyCodeLine{00095             \textcolor{keywordflow}{catch}}
+\DoxyCodeLine{00096             \{}
+\DoxyCodeLine{00097 }
+\DoxyCodeLine{00098             \}}
+\DoxyCodeLine{00099         \}}
+\DoxyCodeLine{00104         \textcolor{keyword}{public} \textcolor{keywordtype}{void} Remove(UserModel userModel)}
+\DoxyCodeLine{00105         \{}
+\DoxyCodeLine{00106             MySqlConnection conn;}
+\DoxyCodeLine{00107             MySqlCommand cmd;}
+\DoxyCodeLine{00108 }
+\DoxyCodeLine{00109             conn = GetDbConnectionString();}
+\DoxyCodeLine{00110             cmd = \textcolor{keyword}{new} MySqlCommand();}
+\DoxyCodeLine{00111 }
+\DoxyCodeLine{00112             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{00113             \{}
+\DoxyCodeLine{00114 }
+\DoxyCodeLine{00115             \}}
+\DoxyCodeLine{00116             \textcolor{keywordflow}{catch}}
+\DoxyCodeLine{00117             \{}
+\DoxyCodeLine{00118 }
+\DoxyCodeLine{00119             \}}
+\DoxyCodeLine{00120         \}}
+\DoxyCodeLine{00121 }
+\DoxyCodeLine{00122         \textcolor{keyword}{public} UserModel GetById(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id})}
+\DoxyCodeLine{00123         \{}
+\DoxyCodeLine{00124             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} NotImplementedException();}
+\DoxyCodeLine{00125         \}}
+\DoxyCodeLine{00126 }
+\DoxyCodeLine{00127         \textcolor{keyword}{public} UserModel GetByUsername(\textcolor{keywordtype}{string} username)}
+\DoxyCodeLine{00128         \{}
+\DoxyCodeLine{00129             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} NotImplementedException();}
+\DoxyCodeLine{00130         \}}
+\DoxyCodeLine{00131 }
+\DoxyCodeLine{00132         \textcolor{keyword}{public} IEnumerable<UserModel> GetByAll()}
+\DoxyCodeLine{00133         \{}
+\DoxyCodeLine{00134             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} NotImplementedException();}
+\DoxyCodeLine{00135         \}}
+\DoxyCodeLine{00136     \}}
+\DoxyCodeLine{00137 \}}
+
+\end{DoxyCode}
