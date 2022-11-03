@@ -107,10 +107,9 @@
 
 
                 <StackPanel Margin="0,-11,0,-38">
-
                     <Label x:Name="lblPayedEurAmount"
-                           Content="Eur:"
-                           HorizontalAlignment="Center"></Label>
+                           Content="EUR:"
+                           FontSize="14" FontWeight="Bold" Width="41"/>
                     <TextBox x:Name="txtPayedEURAmount"                             
                              FontSize="13"
                              FontWeight="Medium"

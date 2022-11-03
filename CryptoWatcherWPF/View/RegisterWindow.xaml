@@ -35,11 +35,11 @@
                 <!-- Creates a Gradient over Crypto Background Image -->
 
                 <Border.Background>
-                <LinearGradientBrush StartPoint="0,1" EndPoint="1,2">
-                    <GradientStop Color="#495371" Offset="0"/>
-                    <GradientStop Color="#74959A" Offset =" 0.75"/>
-                </LinearGradientBrush>
-            </Border.Background>
+                    <LinearGradientBrush StartPoint="0,1" EndPoint="1,2">
+                        <GradientStop Color="#495371" Offset="0"/>
+                        <GradientStop Color="#74959A" Offset =" 0.75"/>
+                    </LinearGradientBrush>
+                </Border.Background>
                 <!-- Creates a Gradient over Border-->
 
                 <Grid>
@@ -184,18 +184,19 @@
 
                         </TextBox>
 
-                        <TextBlock Text ="PASSWORT"
+                        <TextBlock Text ="PASSWORD"
                                Foreground="White"
                                FontSize="12"
                                FontWeight="Bold"
                                FontFamily="Montserrat"
                                Margin="0,15,0,0"
-                               Opacity="100" Width="65"/>
+                               Opacity="100" Width="71"/>
 
                         <PasswordBox 
                             x:Name="tbPassword"
                             FontSize="13"
                             FontWeight="Medium"
+                            Margin="0,5,0,0"
                             FontFamily="Montserrat"
                             Background="Transparent"
                             Foreground="White"
@@ -203,8 +204,25 @@
                             BorderBrush="White"
                             BorderThickness="2,2,2,2" Height="28">
                         </PasswordBox>
+                        <TextBlock Text ="CHECK PASSWORD"
+                            Foreground="White"
+                            FontSize="12"
+                            FontWeight="Bold"
+                            FontFamily="Montserrat"
+                            Margin="0,15,0,0"
+                            Opacity="100" Width="111"/>
+                        <PasswordBox 
+                            x:Name="tbPasswordCheck"
+                            FontSize="13"
+                            FontWeight="Medium"
+                            FontFamily="Montserrat"
+                            Background="Transparent"
+                            Foreground="White"
+                            CaretBrush="LightGray"
+                            BorderBrush="White"
+                            BorderThickness="2,2,2,2" Height="28"/>
 
-                      
+
 
                         <!--<customControls:BindablePasswordBox Password="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                                                         Height="28"
@@ -254,7 +272,7 @@
                                     </Border>
                                 </ControlTemplate>
                             </Button.Template>
-                        </Button>                    
+                        </Button>
 
                         <StackPanel Orientation="Horizontal"
                                 HorizontalAlignment="Center"
