@@ -145,7 +145,7 @@
                                         Grid.ColumnSpan="3">
                         <lvc:CartesianChart.AxisY>
                             <lvc:Axis 
-                                Title="Check In / Check Out"
+                                Title="€"
                                 LabelFormatter="{Binding YFormatterCryptoCourse}"/>
                         </lvc:CartesianChart.AxisY>
                         <lvc:CartesianChart.AxisX>
@@ -156,6 +156,7 @@
                     </lvc:CartesianChart>
 
 
+
                 </Grid>
                 <TextBox x:Name="txt_Logo" HorizontalAlignment="Left" Background="Transparent" Foreground="#F1E0AC" Height="53" Margin="70,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Crypto_Watcher" VerticalAlignment="Top" Width="420" BorderThickness="0,0,0,0" Opacity="1000" FontSize="36" FontWeight="Bold"/>
 
@@ -163,6 +164,45 @@
                     <Image Source="/Images/logoBlackRemovebg.png"
                                        Width="62" Height="58"/>
                 </StackPanel>
+                <Button x:Name="btnDashboardWindow"                        
+                    BorderThickness="0"
+                    Content="Dashboard"
+                    Foreground="AliceBlue"
+                    FontSize="16"
+                    FontFamily="Montserrat"
+                    Cursor="Hand"
+                    Margin="308,460,308,0" 
+                    Grid.Row="1"
+                    Height="47" 
+                    VerticalAlignment="Top" Click="btnGraphWindow_Click">
+
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="#F1E0AC"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#FFFFBB"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <!--Set Trigger an Color for Hover action over Button-->
+
+
+
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Width="150" Height="40"
+                                CornerRadius="20"
+                                Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
             </Grid>
         </Border>
     </Border>

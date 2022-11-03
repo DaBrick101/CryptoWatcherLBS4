@@ -25,6 +25,8 @@ namespace CryptoWatcherWPF.View
 
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
+            DashboardWindow dw = new DashboardWindow();
+            dw.Show();
             this.Close();
         }
 

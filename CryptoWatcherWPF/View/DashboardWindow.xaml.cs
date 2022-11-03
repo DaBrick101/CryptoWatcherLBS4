@@ -46,6 +46,7 @@ namespace CryptoWatcherWPF.View
         {
             var dt = ServiceFactory.Instance.Resolve<IPurchasesDbDataManager>().GetPurchases(ServiceFactory.Instance.UserInstance);
             dt.Columns.Remove("idUser");
+            dt.Columns.Remove("idPurchaseEntry");
             dgvPurchaseEntries.ItemsSource = dt.DefaultView;
         }
 

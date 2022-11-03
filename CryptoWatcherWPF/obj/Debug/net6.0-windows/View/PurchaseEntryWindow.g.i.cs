@@ -125,7 +125,7 @@ namespace CryptoWatcherWPF.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/CryptoWatcherWPF;V1.0.0.0;component/view/purchaseentrywindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/CryptoWatcherWPF;component/view/purchaseentrywindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\View\PurchaseEntryWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
