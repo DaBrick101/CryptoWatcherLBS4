@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherConsole\\CryptoWatcherConsole.csproj": {}
+    "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherConsole\\CryptoWatcherConsole.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherConsole\\CryptoWatcherConsole.csproj": {
+    "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherConsole\\CryptoWatcherConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherConsole\\CryptoWatcherConsole.csproj",
+        "projectUniqueName": "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherConsole\\CryptoWatcherConsole.csproj",
         "projectName": "CryptoWatcherConsole",
-        "projectPath": "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherConsole\\CryptoWatcherConsole.csproj",
-        "packagesPath": "C:\\Users\\lbhbur1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherConsole\\obj\\",
+        "projectPath": "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherConsole\\CryptoWatcherConsole.csproj",
+        "packagesPath": "C:\\Users\\Ricardo.Buchebner\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherConsole\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\lbhbur1\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Ricardo.Buchebner\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,15 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://packagesource": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj": {
-                "projectPath": "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj"
+              "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj": {
+                "projectPath": "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj"
               }
             }
           }
@@ -55,8 +50,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -65,26 +59,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj": {
+    "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj",
+        "projectUniqueName": "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj",
         "projectName": "CryptoWatcherLib",
-        "projectPath": "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj",
-        "packagesPath": "C:\\Users\\lbhbur1\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lbhbur1\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\obj\\",
+        "projectPath": "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj",
+        "packagesPath": "C:\\Users\\Ricardo.Buchebner\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\lbhbur1\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Ricardo.Buchebner\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,8 +81,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://packagesource": {}
         },
         "frameworks": {
           "net6.0": {
@@ -150,8 +139,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -160,7 +148,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

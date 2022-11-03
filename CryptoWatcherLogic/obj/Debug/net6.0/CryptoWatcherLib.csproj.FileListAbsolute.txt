@@ -10,3 +10,15 @@ C:\Users\lbhbur1\Downloads\CryptoWatcherLBS4\CryptoWatcherLBS4\CryptoWatcherLogi
 C:\Users\lbhbur1\Downloads\CryptoWatcherLBS4\CryptoWatcherLBS4\CryptoWatcherLogic\obj\Debug\net6.0\refint\CryptoWatcherLib.dll
 C:\Users\lbhbur1\Downloads\CryptoWatcherLBS4\CryptoWatcherLBS4\CryptoWatcherLogic\obj\Debug\net6.0\CryptoWatcherLib.pdb
 C:\Users\lbhbur1\Downloads\CryptoWatcherLBS4\CryptoWatcherLBS4\CryptoWatcherLogic\obj\Debug\net6.0\ref\CryptoWatcherLib.dll
+C:\Users\Ricardo.Buchebner\source\repos\CryptoWatcherLBS4\CryptoWatcherLogic\bin\Debug\net6.0\CryptoWatcherLib.deps.json
+C:\Users\Ricardo.Buchebner\source\repos\CryptoWatcherLBS4\CryptoWatcherLogic\bin\Debug\net6.0\CryptoWatcherLib.dll
+C:\Users\Ricardo.Buchebner\source\repos\CryptoWatcherLBS4\CryptoWatcherLogic\bin\Debug\net6.0\CryptoWatcherLib.pdb
+C:\Users\Ricardo.Buchebner\source\repos\CryptoWatcherLBS4\CryptoWatcherLogic\obj\Debug\net6.0\CryptoWatcherLib.csproj.AssemblyReference.cache
+C:\Users\Ricardo.Buchebner\source\repos\CryptoWatcherLBS4\CryptoWatcherLogic\obj\Debug\net6.0\CryptoWatcherLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ricardo.Buchebner\source\repos\CryptoWatcherLBS4\CryptoWatcherLogic\obj\Debug\net6.0\CryptoWatcherLib.AssemblyInfoInputs.cache
+C:\Users\Ricardo.Buchebner\source\repos\CryptoWatcherLBS4\CryptoWatcherLogic\obj\Debug\net6.0\CryptoWatcherLib.AssemblyInfo.cs
+C:\Users\Ricardo.Buchebner\source\repos\CryptoWatcherLBS4\CryptoWatcherLogic\obj\Debug\net6.0\CryptoWatcherLib.csproj.CoreCompileInputs.cache
+C:\Users\Ricardo.Buchebner\source\repos\CryptoWatcherLBS4\CryptoWatcherLogic\obj\Debug\net6.0\CryptoWatcherLib.dll
+C:\Users\Ricardo.Buchebner\source\repos\CryptoWatcherLBS4\CryptoWatcherLogic\obj\Debug\net6.0\refint\CryptoWatcherLib.dll
+C:\Users\Ricardo.Buchebner\source\repos\CryptoWatcherLBS4\CryptoWatcherLogic\obj\Debug\net6.0\CryptoWatcherLib.pdb
+C:\Users\Ricardo.Buchebner\source\repos\CryptoWatcherLBS4\CryptoWatcherLogic\obj\Debug\net6.0\ref\CryptoWatcherLib.dll
