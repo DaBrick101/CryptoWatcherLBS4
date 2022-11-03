@@ -174,7 +174,7 @@
                     Margin="308,460,308,0" 
                     Grid.Row="1"
                     Height="47" 
-                    VerticalAlignment="Top" Click="btnGraphWindow_Click">
+                    VerticalAlignment="Top" Click="btnDashboardWindow_Click">
 
                     <Button.Style>
                         <Style TargetType="{x:Type Button}">

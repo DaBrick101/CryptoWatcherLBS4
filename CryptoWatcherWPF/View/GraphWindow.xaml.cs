@@ -23,8 +23,6 @@ namespace CryptoWatcherWPF.View
         }
         private void btnClose_Click(object sender, RoutedEventArgs e)
         {
-            DashboardWindow dbw = new DashboardWindow();
-            dbw.Show();
             this.Close();
         }
         private void btnMinimize_Click(object sender, RoutedEventArgs e)
@@ -73,6 +71,12 @@ namespace CryptoWatcherWPF.View
             DataContext = this;
         }
 
+        private void btnDashboardWindow_Click(object sender, RoutedEventArgs e)
+        {
 
+            DashboardWindow dbw = new DashboardWindow();
+            dbw.Show();
+            this.Close();
+        }
     }
 }

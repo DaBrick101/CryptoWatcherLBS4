@@ -159,7 +159,7 @@
                 <Button x:Name="btnCreateRecord"
                         Command="{Binding LoginCommand}"
                         BorderThickness="0"
-                        Content="Eintrag erstellen"
+                        Content="Create Entry"
                         Foreground="AliceBlue"
                         FontSize="16"
                         FontFamily="Montserrat"

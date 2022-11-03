@@ -1,0 +1,169 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherWPF\\CryptoWatcherWPF.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj",
+        "projectName": "CryptoWatcherLib",
+        "projectPath": "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj",
+        "packagesPath": "C:\\Users\\Ricardo.Buchebner\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ricardo.Buchebner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://packagesource": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            },
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Extended.Wpf.Toolkit": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "MySqlConnector": {
+              "target": "Package",
+              "version": "[2.1.13, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[108.0.2, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherWPF\\CryptoWatcherWPF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherWPF\\CryptoWatcherWPF.csproj",
+        "projectName": "CryptoWatcherWPF",
+        "projectPath": "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherWPF\\CryptoWatcherWPF.csproj",
+        "packagesPath": "C:\\Users\\Ricardo.Buchebner\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherWPF\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ricardo.Buchebner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://packagesource": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {
+              "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj": {
+                "projectPath": "C:\\Users\\Ricardo.Buchebner\\source\\repos\\CryptoWatcherLBS4\\CryptoWatcherLogic\\CryptoWatcherLib.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Extended.Wpf.Toolkit": {
+              "target": "Package",
+              "version": "[4.4.0, )"
+            },
+            "LiveCharts.Wpf": {
+              "target": "Package",
+              "version": "[0.9.7, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
