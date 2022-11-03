@@ -56,5 +56,13 @@ namespace CryptoWatcherWPF.View
             gw.Show();
             this.Close();
         }
+
+        private void btnCurrencyConverterWindow_Click(object sender, RoutedEventArgs e)
+        {
+            CurrencyConverterWindow ccw = new CurrencyConverterWindow();
+            ccw.Show();
+            this.Close();
+
+        }
     }
 }

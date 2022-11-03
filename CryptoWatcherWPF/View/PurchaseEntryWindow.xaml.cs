@@ -45,7 +45,7 @@ namespace CryptoWatcherWPF.View
                 {
                     var payedEURAmount = decimal.Parse(txtPayedEURAmount.Text);
                     var date = DateTime.Now;
-                    var currencyPrice = new CurrencyPrice(cbCurrency.Text, date);
+                    var currencyPrice = new CurrencyPrice(cbCurrency.Text);
                     var purchase = new PurchaseEntry(ServiceFactory.Instance.UserInstance, payedEURAmount, currencyPrice, date);
                     ServiceFactory.Instance.Resolve<IPurchasesDbDataManager>().InsertPurchase(purchase);
                     MessageBox.Show("Eintrag wurde Erfolgreich erstellt!", "Information", MessageBoxButton.OK, MessageBoxImage.Information);

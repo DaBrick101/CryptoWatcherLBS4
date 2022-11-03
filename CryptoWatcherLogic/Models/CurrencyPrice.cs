@@ -4,23 +4,20 @@ namespace CryptoWatcherLib.Models;
 /// <summary>
 /// TODO Doku schreiben
 /// </summary>
-public class CurrencyPrice : ICurrencyPriceSpecificTime
+public class CurrencyPrice : ICurrencyPrice
 {
     private int _id;
     private string _currencyName;
     private decimal _price;
-    private DateTime _date;
 
     /// <summary>
     /// TODO Doku schreiben
     /// </summary>
     /// <param currencyName="currencyName"></param>
     /// <param currencyName="price"></param>
-    /// <param currencyName="date"></param>
-    public CurrencyPrice(string currencyName, DateTime date)
+    public CurrencyPrice(string currencyName)
     {
         _currencyName = currencyName;
-        _date = date;
 
         _price = RefreshPrice();
     }
@@ -38,11 +35,6 @@ public class CurrencyPrice : ICurrencyPriceSpecificTime
     public decimal GetPrice()
     {
         return _price;
-    }
-
-    public DateTime GetDate()
-    {
-        return _date;
     }
 
     public decimal RefreshPrice()

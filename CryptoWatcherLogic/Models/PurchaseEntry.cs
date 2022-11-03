@@ -13,7 +13,7 @@ namespace CryptoWatcherLib.Models
         private DateTime _date;
         private Decimal _payedAmountInCurrency;
 
-        public PurchaseEntry(IUser user, decimal payedAmount,ICurrencyPriceSpecificTime currency, DateTime date)
+        public PurchaseEntry(IUser user, decimal payedAmount,ICurrencyPrice currency, DateTime date)
         {
             _user = user;
             _payedAmount = payedAmount;

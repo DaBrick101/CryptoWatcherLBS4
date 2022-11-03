@@ -13,6 +13,22 @@ namespace CryptoWatcherLib.DataAccess.Api
             _key = ServiceFactory.Instance.Resolve<IAppConfigAccess>().GetCryptoCurrencyApiKey();
         }
 
+        public decimal GetConvertPrice(string currencyFrom, string currencyTo)
+        {
+            var url = $"https://min-api.cryptocompare.com/data/pricemulti?fsyms={currencyFrom}&tsyms={currencyTo}&api_key={_key}";
+
+            var client = new RestClient(url);
+            var response = client.Execute(new RestRequest());
+
+            var convertPrice = ParseKeyFromJson(response.Content, currencyTo);
+            if (convertPrice == 0)
+            {
+                throw new Exception("Price is 0");
+            }
+
+            return convertPrice;
+        }
+
         public decimal GetCurrentCurrencyPrice(string currencyName)
         {
             var url = $"https://min-api.cryptocompare.com/data/pricemulti?fsyms={currencyName}&tsyms=EUR&api_key={_key}";

@@ -13,6 +13,51 @@
         AllowsTransparency="true"
         MouseDown="Window_MouseDown">
 
+    <!--<Border CornerRadius ="7">
+
+        <Border.Background>
+            <ImageBrush ImageSource="/Images/LogInPageBackground.jpg"
+                        Stretch="Fill"/>
+        </Border.Background>
+        <Border CornerRadius="5"
+                BorderThickness="3"
+                Opacity ="0.88"
+                >
+           
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#495371" Offset="0"/>
+                    <GradientStop Color="#74959A" Offset =" 0.5"/>
+                    <GradientStop Color="#98B4AA" Offset="1"/>
+
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            
+
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,2">
+                    <GradientStop Color="#495371" Offset="0"/>
+                    <GradientStop Color="#74959A" Offset =" 0.75"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <TextBox x:Name="txt_Logo" 
+                     HorizontalAlignment="Left" 
+                     Background="Transparent" 
+                     Foreground="#F1E0AC" 
+                     Height="53" 
+                     Margin="70,0,0,0" 
+                     Grid.Row="1" 
+                     TextWrapping="Wrap" 
+                     Text="Crypto_Watcher" 
+                     VerticalAlignment="Top" 
+                     Width="420" 
+                     Opacity="1000" 
+                     FontSize="36" 
+                     FontWeight="Bold" 
+                     Focusable="False" 
+                     IsEnabled="False"/>
+        </Border>
+    </Border>-->
     <Border CornerRadius ="7">
         <!--First Border - Contains everything and is used to set Background to grey-->
         <Border.Background>
@@ -40,9 +85,237 @@
                     <GradientStop Color="#74959A" Offset =" 0.75"/>
                 </LinearGradientBrush>
             </Border.Background>
+
+            <Grid RenderTransformOrigin="0.442,0.726" Margin="0,0,0,-3">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <!--Defines 2 Rows in Window (Menu Bar und Log in Reihe)-->
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width ="25"/>
+                        <ColumnDefinition Width="25"/>
+                        <ColumnDefinition Width="5"/>
+                    </Grid.ColumnDefinitions>
+                    <!--Defines 4 Columns-->
+
+                    <TextBlock Text="Currnecy Converter"
+                               Foreground="Gray"
+                               FontSize="10"
+                               FontFamily="Montserrat"
+                               Grid.Column="0"
+                               VerticalAlignment="Center"
+                               Margin="10,0,0,0"/>
+                    <!--Small Header in Menu Bar-->
+
+                    <Button x:Name="btn_Minimizer"
+                            BorderThickness="0"
+                            Content="-"
+                            Foreground="AliceBlue"
+                            FontSize="16"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                            Grid.Column="1"
+                            Click="btnMinimize_Click"
+                            >
+                        <!--Button to minimize Window-->
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="#495371"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="#74959A"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <!--Set Trigger an Color for Hover action over Button-->
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="18" Height="18"
+                                        CornerRadius="9"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <Button x:Name="btn_Close"
+                            BorderThickness="0"
+                            Content="X"
+                            Foreground="AliceBlue"
+                            FontSize="16"
+                            FontFamily="Montserrat"
+                            Cursor="Hand"
+                            Grid.Column="2"
+                            Click="btnClose_Click" Height="30" VerticalAlignment="Top">
+                        <!--Button to close Application-->
+
+                        <Button.Style>
+                            <Style TargetType="Button">
+                                <Setter Property="Background" Value="Red"/>
+                                <Style.Triggers>
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="Crimson"/>
+                                    </Trigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                        <!--Set Trigger an Color for Hover action over Button-->
+
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Width="18" Height="18"
+                                        CornerRadius="9"
+                                        Background="{TemplateBinding Background}">
+                                    <ContentPresenter VerticalAlignment="Center"
+                                                      HorizontalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </Grid>
+                <TextBox x:Name="txt_Logo" HorizontalAlignment="Left" Background="Transparent" Foreground="#F1E0AC" Height="53" Margin="70,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Crypto_Watcher" VerticalAlignment="Top" Width="420" BorderThickness="0,0,0,0" Opacity="1000" FontSize="36" FontWeight="Bold" Focusable="False" IsEnabled="False"/>
+
+                <StackPanel x:Name="Logo_black" HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="78" Grid.Row="1">
+                    <Image Source="/Images/logoBlackRemovebg.png"
+                                       Width="62" Height="58"/>
+                </StackPanel>
+                <Button x:Name="btnDashboardWindow"                        
+                    BorderThickness="0"
+                    Content="Dashboard"
+                    Foreground="AliceBlue"
+                    FontSize="16"
+                    FontFamily="Montserrat"
+                    Cursor="Hand"
+                    Margin="219,460,397,0" 
+                    Grid.Row="1"
+                    Height="47" 
+                    VerticalAlignment="Top" Click="btnDashboardWindow_Click">
+
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="#F1E0AC"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#FFFFBB"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <!--Set Trigger an Color for Hover action over Button-->
+
+
+
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Width="150" Height="40"
+                                CornerRadius="20"
+                                Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+                <Button x:Name="btnCalc"                        
+                    BorderThickness="0"
+                    Content="Calc"
+                    Foreground="AliceBlue"
+                    FontSize="16"
+                    FontFamily="Montserrat"
+                    Cursor="Hand"
+                    Margin="397,460,219,0" 
+                    Grid.Row="1"
+                    Height="47" 
+                    VerticalAlignment="Top" Click="btnCalc_Click">
+
+                    <Button.Style>
+                        <Style TargetType="{x:Type Button}">
+                            <Setter Property="Background" Value="#F1E0AC"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#FFFFBB"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
+                    <!--Set Trigger an Color for Hover action over Button-->
+
+
+
+
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Width="150" Height="40"
+                                CornerRadius="20"
+                                Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+
+                </Button>
+                <ComboBox x:Name="cbCurrencyFrom"
+                              IsEditable="True"
+                              IsReadOnly="True"
+                              Text="From:"
+                              ToolTip="Currency"
+                              Margin="250,142,434,350" Grid.Row="1">
+                    <ComboBoxItem Content="BTC" x:Name="BitcoinFrom"/>
+                    <ComboBoxItem Content="ETH" x:Name="EthereumFrom"/>
+                    <ComboBoxItem Content="DOGE" x:Name="DogeCoinFrom"/>
+                    <ComboBoxItem Content="EUR" x:Name="EurFrom"/>
+                    <ComboBoxItem Content="USD" x:Name="UsdFrom"/>
+                </ComboBox>
+                <ComboBox x:Name="cbCurrencyTo"
+                    IsEditable="True"
+                    IsReadOnly="True"
+                    Text="To:"
+                    ToolTip="Currency"
+                    Margin="250,218,434,273" Grid.Row="1">
+                    <ComboBoxItem Content="BTC" x:Name="BitcoinTo"/>
+                    <ComboBoxItem Content="ETH" x:Name="EthereumTo"/>
+                    <ComboBoxItem Content="DOGE" x:Name="DogeCoinTo"/>
+                    <ComboBoxItem Content="EUR" x:Name="EurTo"/>
+                    <ComboBoxItem Content="USD" x:Name="UsdTo"/>
+                </ComboBox>
+                <TextBox x:Name="txtAmountFrom"                             
+                    FontSize="13"
+                    FontWeight="Medium"
+                    FontFamily="Montserrat"
+                    Foreground="Gray"
+                    CaretBrush="LightGray"
+                    BorderBrush="White"
+                    BorderThickness="2,2,2,2"
+                    ToolTip="Eur"
+    Margin="397,140,219,349" Grid.Row="1"/>
+                <TextBox x:Name="txtConvertedPrice"                             
+                    FontSize="13"
+                    FontWeight="Medium"
+                    FontFamily="Montserrat"
+                    Foreground="Gray"
+                    CaretBrush="LightGray"
+                    BorderBrush="White"
+                    BorderThickness="2,2,2,2"
+                    ToolTip="Eur"
+                    Margin="305,322,311,167" Grid.Row="1"/>
+                <Label x:Name="lblPayedEurAmount"
+                    Content="="
+                      FontSize="24"
+                    Margin="271,316,494,161" Grid.Row="1" RenderTransformOrigin="0.534,0.595"/>
+            </Grid>
         </Border>
     </Border>
-    
 
 
 </Window>

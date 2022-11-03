@@ -1,10 +1,9 @@
 ﻿namespace CryptoWatcherLib.Models
 {
-    public interface ICurrencyPriceSpecificTime
+    public interface ICurrencyPrice
     {
         int GetID();
         string GetName();
         decimal GetPrice();
-        DateTime GetDate();
     }
 }
