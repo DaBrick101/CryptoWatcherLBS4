@@ -13,6 +13,7 @@ namespace CryptoWatcherLib.Models
         private string _username;
         private string _password;
         private bool _isLoggedIn;
+        private bool _isRegisterd;
 
         public User(NetworkCredential credential)
         {
