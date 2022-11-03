@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Ricardo.Buchebner\source\repos\CryptoWatcherLBS4\CryptoWatcherWPF\App.xaml
-6594519286
+7-191025439
 
-8544721378
+91227751117
 2091410948829
-MainWindow.xaml;View\DashboardWindow.xaml;View\GraphWindow.xaml;View\LoginWindow.xaml;View\PurchaseEntryWindow.xaml;View\RegisterWindow.xaml;
+MainWindow.xaml;View\CurrencyConverterWindow.xaml;View\DashboardWindow.xaml;View\GraphWindow.xaml;View\LoginWindow.xaml;View\PurchaseEntryWindow.xaml;View\RegisterWindow.xaml;
 
 False
 

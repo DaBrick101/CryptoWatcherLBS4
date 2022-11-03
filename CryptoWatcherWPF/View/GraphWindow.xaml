@@ -158,7 +158,7 @@
 
 
                 </Grid>
-                <TextBox x:Name="txt_Logo" HorizontalAlignment="Left" Background="Transparent" Foreground="#F1E0AC" Height="53" Margin="70,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Crypto_Watcher" VerticalAlignment="Top" Width="420" BorderThickness="0,0,0,0" Opacity="1000" FontSize="36" FontWeight="Bold"/>
+                <TextBox x:Name="txt_Logo" HorizontalAlignment="Left" Background="Transparent" Foreground="#F1E0AC" Height="53" Margin="70,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Crypto_Watcher" VerticalAlignment="Top" Width="420" BorderThickness="0,0,0,0" Opacity="1000" FontSize="36" FontWeight="Bold" Focusable="False" IsEnabled="False"/>
 
                 <StackPanel x:Name="Logo_black" HorizontalAlignment="Left" Height="53" VerticalAlignment="Top" Width="78" Grid.Row="1">
                     <Image Source="/Images/logoBlackRemovebg.png"
