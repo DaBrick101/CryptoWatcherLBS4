@@ -16,7 +16,8 @@
     <Border CornerRadius ="7">
         <!--First Border - Contains everything and is used to set Background to grey-->
         <Border.Background>
-            <SolidColorBrush Color="DimGray"></SolidColorBrush>
+            <ImageBrush ImageSource="/Images/LogInPageBackground.jpg"
+                        Stretch="Fill"/>
         </Border.Background>
         <Border CornerRadius="5"
                 BorderThickness="3"
@@ -31,6 +32,14 @@
 
                 </LinearGradientBrush>
             </Border.BorderBrush>
+            <!--Creates a Gradient over Crypto Background Image-->
+
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,1" EndPoint="1,2">
+                    <GradientStop Color="#495371" Offset="0"/>
+                    <GradientStop Color="#74959A" Offset =" 0.75"/>
+                </LinearGradientBrush>
+            </Border.Background>
 
             <Grid Margin="-3,43,-3,42">
 
@@ -136,13 +145,12 @@
                     <Button x:Name="btnCreateEntry"                            
                             BorderThickness="0"
                             Content="Create Entry"
-                            Foreground="White"
                             FontSize="16"
                             FontFamily="Montserrat"
                             Cursor="Hand"
                             Grid.Column="2"
                             Margin="0,10,0,0" 
-                            Height="44" Click="btnCreateEntry_Click">
+                            Height="44" Click="btnCreateEntry_Click" Foreground="White">
                         <!--Create Log in Button-->
 
                         <Button.Style>

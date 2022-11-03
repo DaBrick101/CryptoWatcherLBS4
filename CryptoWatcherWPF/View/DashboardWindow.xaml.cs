@@ -64,5 +64,6 @@ namespace CryptoWatcherWPF.View
             this.Close();
 
         }
+
     }
 }

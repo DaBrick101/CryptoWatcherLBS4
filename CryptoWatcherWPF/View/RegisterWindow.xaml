@@ -21,7 +21,7 @@
             </Border.Background>
             <Border CornerRadius="5"
                 BorderThickness="3"
-                Opacity ="0.88"
+                Opacity ="0.88" Margin="0,0,0,-28"
                 >
                 <!--Second Border is used to set Opacity and Border-->
                 <Border.BorderBrush>
@@ -221,21 +221,30 @@
                             CaretBrush="LightGray"
                             BorderBrush="White"
                             BorderThickness="2,2,2,2" Height="28"/>
+                        <StackPanel Orientation="Horizontal"
+                                    HorizontalAlignment="Center">
 
-
-
-                        <!--<customControls:BindablePasswordBox Password="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                                                        Height="28"
-                                                        Margin="0,5,0,0">
-                        </customControls:BindablePasswordBox>-->
-
-
+                            <TextBlock Text ="Login?"                                      
+                                   Foreground="DarkGray"
+                                   FontSize="11"
+                                   FontWeight="Normal"
+                                   FontFamily="Montserrat"
+                                   Opacity="100" Height="16"/>
+                            <Label 
+                                x:Name="lblLogin" 
+                                Content="Login"
+                                Foreground="White" 
+                                Height="25"
+                                FontSize="11"
+                                FontWeight="Normal"
+                                FontFamily="Montserrat" MouseLeftButtonDown="lblLogin_MouseLeftButtonDown"/>
+                        </StackPanel>
                         <TextBlock Text ="{Binding ErrorMessage}"
                                Foreground="Red"
                                FontSize="12"
                                FontWeight="Normal"
                                FontFamily="Montserrat"
-                               Margin="0,15,0,0"
+                               Margin="0,0,0,0"
                                TextWrapping="Wrap"
                                Opacity="100"/>
 
@@ -273,29 +282,6 @@
                                 </ControlTemplate>
                             </Button.Template>
                         </Button>
-
-                        <StackPanel Orientation="Horizontal"
-                                HorizontalAlignment="Center"
-                                Margin="0,15,0,0">
-
-                            <!-- TODO: Steht das im Pflichtenheft? -->
-                            <TextBlock Text ="Register a new Account?"                                      
-                                   Foreground="DarkGray"
-                                   FontSize="11"
-                                   FontWeight="Normal"
-                                   FontFamily="Montserrat"
-                                   Opacity="100" Height="16"/>
-                            <Label 
-                                x:Name="lblLogin" 
-                                Content="Login"
-                                Foreground="White" 
-                                Height="25"
-                                FontSize="11"
-                                FontWeight="Normal"
-                                FontFamily="Montserrat" MouseLeftButtonDown="lblLogin_MouseLeftButtonDown">
-
-                            </Label>
-                        </StackPanel>
 
                         <!--Create Forgot Password and option to reset-->
 

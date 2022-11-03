@@ -13,6 +13,8 @@
         AllowsTransparency="true"
         MouseDown="Window_MouseDown">
 
+
+
     <Border CornerRadius ="7">
         <!--First Border - Contains everything and is used to set Background to grey-->
         <Border.Background>
@@ -141,11 +143,20 @@
                           Margin="54,63,54,0" 
                           Grid.Row="1"
                           VerticalAlignment="Top"
-                          BorderThickness="1,1,1,1"                           
-                          AutoGenerateColumns="True">
-                    <DataGrid.Background>
-                        <SolidColorBrush Color="White" Opacity="10"/>
-                    </DataGrid.Background>
+                          BorderThickness="1,1,1,1"
+                          AutoGenerateColumns="true" FontFamily="Montserrat" Background="#FF796E23" Focusable="False" IsEnabled="False">
+                    <DataGrid.Foreground>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#CC725B21"/>
+                            <GradientStop Color="#FFD99F08" Offset="1"/>
+                        </LinearGradientBrush>
+                    </DataGrid.Foreground>
+                    <DataGrid.BorderBrush>
+                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                            <GradientStop Color="#FF400EB4"/>
+                            <GradientStop Color="#FF516773" Offset="1"/>
+                        </LinearGradientBrush>
+                    </DataGrid.BorderBrush>
                 </DataGrid>
                 <TextBox x:Name="txt_Logo" HorizontalAlignment="Left" Background="Transparent" Foreground="#F1E0AC" Height="53" Margin="70,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Crypto_Watcher" VerticalAlignment="Top" Width="420" BorderThickness="0,0,0,0" Opacity="1000" FontSize="36" FontWeight="Bold" Focusable="False" IsEnabled="False"/>
 
