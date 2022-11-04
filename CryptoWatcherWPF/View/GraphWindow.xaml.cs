@@ -39,8 +39,8 @@ namespace CryptoWatcherWPF.View
         private void InitializeCryptoCourseGraph()
         {
             var btcData = ServiceFactory.Instance.Resolve<IGraphData>().BtcValues;
-            var ethData = ServiceFactory.Instance.Resolve<IGraphData>().EthValues;
-            var dogeData = ServiceFactory.Instance.Resolve<IGraphData>().DogeValues;
+            //var ethData = ServiceFactory.Instance.Resolve<IGraphData>().EthValues;
+            //var dogeData = ServiceFactory.Instance.Resolve<IGraphData>().DogeValues;
 
             SeriesCollectionCryptoCourse = new SeriesCollection
             {
@@ -49,19 +49,20 @@ namespace CryptoWatcherWPF.View
                     Title = "Bitcoin",
                     Values = new ChartValues<double>(btcData),
                     Stroke = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(255,0,0))
+                   
                 },
-                new LineSeries
-                {
-                    Title = "Ehterum",
-                    Values = new ChartValues<double>(ethData),
-                    Stroke = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(0,0,255))
-                },
-                new LineSeries
-                {
-                    Title = "Dogecoin",
-                    Values = new ChartValues<double>(dogeData),
-                    Stroke = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(0,255,0))
-                }
+                ////new LineSeries
+                ////{
+                ////    Title = "Ehterum",
+                ////    Values = new ChartValues<double>(ethData),
+                ////    Stroke = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(0,0,255))
+                ////},
+                ////new LineSeries
+                ////{
+                ////    Title = "Dogecoin",
+                ////    Values = new ChartValues<double>(dogeData),
+                ////    Stroke = new System.Windows.Media.SolidColorBrush(System.Windows.Media.Color.FromRgb(0,255,0))
+                ////}
             };
 
             //Defining Labels of Graph

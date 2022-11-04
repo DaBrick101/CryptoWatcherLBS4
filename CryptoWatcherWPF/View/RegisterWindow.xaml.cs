@@ -62,6 +62,11 @@ namespace CryptoWatcherWPF.View
 
             User user = new User(credential);
             user.Register();
+            LoginWindow loginWindow = new LoginWindow();
+            loginWindow.Show();
+            this.Close();
+
+
         }
     }
 }
